@@ -1,0 +1,32 @@
+#+title: Xmobar
+
+* About The Project
+
+My [[https://codeberg.org/xmobar/xmobar][Xmobar]] configuration with haskell (instead of =.xmobarrc=).
+
+* Getting Started
+
+There are several ways to install Xmobar. The following instruction builds from source using stack.
+
+** Installation
+
+Clone the repo:
+#+begin_src sh
+git clone git@github.com:stjandra/xmobar.git
+#+end_src
+
+Go to the repo:
+#+begin_src sh
+cd xmobar
+#+end_src
+
+Install Xmobar:
+#+begin_src sh
+stack install
+#+end_src
+
+Install my =xmobar.hs=.
+This creates =xmobar= executable in =~/.local/bin=.
+#+begin_src sh
+stack ghc -- --make -o $HOME/.local/bin/xmobar xmobar.hs
+#+end_src
